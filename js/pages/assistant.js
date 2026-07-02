@@ -16,7 +16,7 @@ export async function send() {
 </div>
 `;
 
-    await saveChat("user", message);
+    //await saveChat("user", message);
 
     input.value = "";
 
@@ -28,7 +28,7 @@ export async function send() {
 </div>
 `;
 
-    await saveChat("ai", reply);
+    //await saveChat("ai", reply);
 
     messages.scrollTop = messages.scrollHeight;
 
