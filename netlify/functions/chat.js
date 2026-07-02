@@ -46,8 +46,9 @@ export default async (request) => {
             })
 
         });
-
+console.log("Status:", response.status);
         const data = await response.json();
+        console.log("Gemini response:", JSON.stringify(data, null, 2));
 
         const text =
         data.candidates?.[0]?.content?.parts?.[0]?.text
